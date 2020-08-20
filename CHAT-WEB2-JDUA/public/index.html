@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-app.js"></script>
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.18.0/firebase-firestore.js"></script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyBLC0D8oB1QZj58h3VQ0NLzl1mAG__AXus",
+      authDomain: "chat-web2-jdua.firebaseapp.com",
+      databaseURL: "https://chat-web2-jdua.firebaseio.com",
+      projectId: "chat-web2-jdua",
+      storageBucket: "chat-web2-jdua.appspot.com",
+      messagingSenderId: "898761815714",
+      appId: "1:898761815714:web:27a265a7525f3379f909fb"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+
+</head>
+
+<body>
+  <div class="container">
+    <nav class=" navbar navbar-dark bg-dark">
+      <span class="navbar-brand " id="username">chat</span>
+      <div id="button">
+      </div>
+    </nav>
+    <main class="mt-3" style="height: 80vh; overflow-y: scroll;" id="saludo">
+
+
+    </main>
+    <form id="sendText">
+      <input type="text" class="form-control" placeholder="enviar mensaje" id="iChat">
+      <div class="input-group-append">
+        <button class="btn btn-primary" type="submit">enviar</button>
+
+      </div>
+    </form>
+  </div>
+  <form id="archive" >
+    <div>
+      <button class="btn btn-info d-flex justify-content-start" type="submit">enviar archivos 
+      </button>
+    </div>
+  </form>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="app.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
